@@ -51,6 +51,9 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+# Output of 'vsce package'
+*.vsix
+
 # Yarn Integrity file
 .yarn-integrity
 
@@ -60,19 +63,28 @@ typings/
 # next.js build output
 .next
 
+# gulp-files
+.gulp/
+gulpfile.ts
+
 # Source-files
-[Ss]rc/
+ESLintLanguageService/[Ss]rc/
 
 # TypeScript config-files
 tsconfig.json
 tslint.json
 
-# Source-maps
-[Ll]ib/**/*.js.map
-
-# Unit-Tests
-test/
-[Ll]ib/tests/
+# Unit-Tests and debug-files
+ESLintLanguageService/[Ll]ib/!(index.js)
 
 # Visual Studio Code-Environment
 .vscode/
+
+# Visual Studio Code Experimental Instance
+.vscode-test/
+
+# Ignore-files
+.gitignore
+
+# Drone configuration
+.drone.yml
