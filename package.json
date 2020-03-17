@@ -6,6 +6,7 @@
   "markdownDescription": "A VSCode-Extension that provides ESLint support using `typescript-eslint-plugin`",
   "author": "Manuel Thalmann <m@nuth.ch>",
   "icon": "ESLintLanguageService/Resources/Icon.png",
+  "publisher": "manuth",
   "license": "MIT",
   "keywords": [
     "TypeScript",
@@ -47,7 +48,9 @@
     "lint-extension": "tslint -p ./ESLintLanguageService/ -t verbose",
     "prepare": "npm run rebuild-debug"
   },
-  "dependencies": {},
+  "dependencies": {
+    "typescript-eslint-plugin": "^1.0.6"
+  },
   "devDependencies": {
     "@manuth/tsconfig": "^1.2.2",
     "@manuth/tslint-presets": "^1.0.4",
@@ -90,5 +93,129 @@
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "watchify": "^3.11.1"
+  },
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact"
+  ],
+  "contributes": {
+    "typescriptServerPlugins": [
+      {
+        "name": "typescript-eslint-plugin",
+        "enableForWorkspaceTypeScriptVersions": true
+      }
+    ],
+    "languages": [
+      {
+        "id": "ignore",
+        "filenames": [
+          ".eslintignore"
+        ]
+      },
+      {
+        "id": "jsonc",
+        "filenames": [
+          ".eslintrc.json"
+        ]
+      }
+    ],
+    "jsonValidation": [
+      {
+        "fileMatch": ".eslintrc",
+        "url": "https://json.schemastore.org/eslintrc"
+      },
+      {
+        "fileMatch": ".eslintrc.json",
+        "url": "https://json.schemastore.org/eslintrc"
+      },
+      {
+        "fileMatch": "package.json",
+        "url": "./ESLintLanguageService/Resources/eslint.package.json"
+      },
+      {
+        "fileMatch": "jsconfig*.json",
+        "url": "./ESLintLanguageService/Resources/tsconfig.schema.json"
+      },
+      {
+        "fileMatch": "tsconfig*.json",
+        "url": "./ESLintLanguageService/Resources/tsconfig.schema.json"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "ESLint Language Service",
+        "properties": {
+          "eslint-service.ignoreJavaScript": {
+            "type": "boolean",
+            "default": false,
+            "scope": "window",
+            "description": "Controls whether javascript-files should be ignored."
+          },
+          "eslint-service.ignoreTypeScript": {
+            "type": "boolean",
+            "default": false,
+            "scope": "window",
+            "description": "Controls whether typescript-files should be ignored."
+          },
+          "eslint-service.allowInlineConfig": {
+            "type": "boolean",
+            "default": true,
+            "scope": "window",
+            "description": "Controls whether inline eslint-commants are processed."
+          },
+          "eslint-service.reportUnusedDisableDirectives": {
+            "type": "boolean",
+            "default": true,
+            "scope": "window",
+            "description": "Controls whether useless eslint-disable-next-line comments are detected.",
+            "markdownDescription": "Controls whether useless `eslint-disable-next-line`-comments are reported."
+          },
+          "eslint-service.useEslintrc": {
+            "type": "boolean",
+            "default": true,
+            "scope": "window",
+            "description": "Controls whether .eslintrc.*-files are processed.",
+            "markdownDescription": "Controls whether `.eslintrc.*`-files are processed."
+          },
+          "eslint-service.configFile": {
+            "type": "string",
+            "scope": "window",
+            "description": "The path to a custom `eslintrc`-configuration to load."
+          },
+          "eslint-service.alwaysShowRuleFailuresAsWarnings": {
+            "type": "boolean",
+            "default": false,
+            "scope": "window",
+            "description": "Controls whether all rule-failures, regardless whether the rules are set to warn or error, should be reported as warnings.",
+            "markdownDescription": "Controls whether all rule-failures, regardless whether the rules are set to `warn` or `error`, should be reported as warnings."
+          },
+          "eslint-service.suppressWhileTypeErrorsPresent": {
+            "type": "boolean",
+            "default": false,
+            "scope": "window",
+            "description": "Controls whether eslint-reports should be suppressed when there are other errors present."
+          },
+          "eslint-service.suppressDeprecationWarnings": {
+            "type": "boolean",
+            "default": false,
+            "scope": "window",
+            "description": "Controls whether warnings about the use of deprecated rules should be suppressed."
+          },
+          "eslint-service.packageManager": {
+            "type": "string",
+            "default": "npm",
+            "scope": "window",
+            "enum": [
+              "npm",
+              "pnpm",
+              "yarn"
+            ],
+            "description": "The package-manager to print suggested commands for."
+          }
+        }
+      }
+    ]
   }
 }
