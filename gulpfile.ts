@@ -143,7 +143,7 @@ function Debug()
             (sourcemaps as any).mapSources(
                 (sourcePath: string) =>
                 {
-                    let sourceFile = Path.resolve(settings.DestinationPath(), sourcePath);
+                    let sourceFile = Path.resolve(settings.SourcePath(), sourcePath);
                     let baseDir = settings.DestinationPath(Path.relative(settings.SourcePath(), Path.dirname(sourceFile)));
                     return Path.relative(baseDir, sourceFile);
                 }) as NodeJS.ReadWriteStream
