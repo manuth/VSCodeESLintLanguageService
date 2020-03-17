@@ -17,11 +17,18 @@
             "label": "Build Release",
             "type": "npm",
             "script": "build-release",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
             "problemMatcher": "$tsc"
+        },
+        {
+            "label": "Watch Debug",
+            "type": "npm",
+            "script": "watch-debug",
+            "group": "build",
+            "problemMatcher": "$tsc-watch",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "never"
+            }
         },
         {
             "label": "Watch Release",
