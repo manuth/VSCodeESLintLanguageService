@@ -13,7 +13,7 @@
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
             "outFiles": [
-                "${workspaceFolder}/MarkdownConverter/lib/**/*.js"
+                "${workspaceFolder}/ESLintLanguageService/lib/**/*.js"
             ],
             "preLaunchTask": "Watch Debug",
             "postDebugTask": "Stop Debug"
@@ -27,7 +27,7 @@
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
             "outFiles": [
-                "${workspaceFolder}/MarkdownConverter/lib/**/*.js"
+                "${workspaceFolder}/ESLintLanguageService/lib/**/*.js"
             ],
             "preLaunchTask": "Watch Release",
             "postDebugTask": "Stop Release"
