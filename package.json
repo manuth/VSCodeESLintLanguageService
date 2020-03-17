@@ -5,6 +5,7 @@
   "description": "A VSCode-Extension that provides ESLint support using typescript-eslint-plugin",
   "markdownDescription": "A VSCode-Extension that provides ESLint support using `typescript-eslint-plugin`",
   "author": "Manuel Thalmann <m@nuth.ch>",
+  "icon": "ESLintLanguageService/Resources/Icon.png",
   "license": "MIT",
   "keywords": [
     "TypeScript",
