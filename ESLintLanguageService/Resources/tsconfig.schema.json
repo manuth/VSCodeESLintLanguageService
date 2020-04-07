@@ -80,8 +80,13 @@
                                         "pnpm",
                                         "yarn"
                                     ],
-                                    "description": "The package-manager to print suggested commands for.",
+                                    "description": "The package-manager to load global modules.",
                                     "enumDescriptions": [
+                                        "Indicates the Node Package Manager.",
+                                        "Indicates the pnpm Package Manager.",
+                                        "Indicates the yarn Package Manager."
+                                    ],
+                                    "markdownEnumDescriptions": [
                                         "Indicates the Node Package Manager.",
                                         "Indicates the `pnpm` Package Manager.",
                                         "Indicates the `yarn` Package Manager."
