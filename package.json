@@ -49,7 +49,7 @@
     "prepare": "npm run rebuild-debug"
   },
   "dependencies": {
-    "typescript-eslint-plugin": "^1.1.0"
+    "typescript-eslint-plugin": "^1.1.2"
   },
   "devDependencies": {
     "@manuth/tsconfig": "^1.2.2",
