@@ -163,14 +163,13 @@
             "type": "boolean",
             "default": true,
             "scope": "window",
-            "description": "Controls whether inline eslint-commants are processed."
+            "description": "Controls whether inline eslint-comments are processed."
           },
           "eslint-service.reportUnusedDisableDirectives": {
             "type": "boolean",
             "default": true,
             "scope": "window",
-            "description": "Controls whether useless eslint-disable-next-line comments are detected.",
-            "markdownDescription": "Controls whether useless `eslint-disable-next-line`-comments are reported."
+            "description": "Controls whether useless eslint-disable-next-line comments are detected."
           },
           "eslint-service.useEslintrc": {
             "type": "boolean",

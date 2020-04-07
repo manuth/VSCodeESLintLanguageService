@@ -36,7 +36,7 @@
                                 "allowInlineConfig": {
                                   "type": "boolean",
                                   "default": true,
-                                  "description": "Controls whether inline eslint-commants are processed."
+                                  "description": "Controls whether inline eslint-comments are processed."
                                 },
                                 "reportUnusedDisableDirectives": {
                                   "type": "boolean",
