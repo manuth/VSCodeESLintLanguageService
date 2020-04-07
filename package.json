@@ -163,13 +163,15 @@
             "type": "boolean",
             "default": true,
             "scope": "window",
-            "description": "Controls whether inline eslint-comments are processed."
+            "description": "Controls whether inline eslint-comments are processed.",
+            "markdownDescription": "Controls whether inline `eslint`-comments are processed."
           },
           "eslint-service.reportUnusedDisableDirectives": {
             "type": "boolean",
             "default": true,
             "scope": "window",
-            "description": "Controls whether useless eslint-disable-next-line comments are detected."
+            "description": "Controls whether useless eslint-disable-next-line comments are detected.",
+            "markdownDescription": "Controls whether useless `eslint-disable-next-line` comments are detected."
           },
           "eslint-service.useEslintrc": {
             "type": "boolean",
@@ -181,7 +183,8 @@
           "eslint-service.configFile": {
             "type": "string",
             "scope": "window",
-            "description": "The path to a custom `eslintrc`-configuration to load."
+            "description": "The path to a custom eslintrc-configuration to load.",
+            "markdownDescription": "The path to a custom `eslintrc`-configuration to load."
           },
           "eslint-service.alwaysShowRuleFailuresAsWarnings": {
             "type": "boolean",
