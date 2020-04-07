@@ -212,12 +212,28 @@
               "pnpm",
               "yarn"
             ],
-            "description": "The package-manager to print suggested commands for."
+            "description": "The package-manager to print suggested commands for.",
+            "enumDescriptions": [
+              "Indicates the Node Package Manager.",
+              "Indicates the `pnpm` Package Manager.",
+              "Indicates the `yarn` Package Manager."
+            ]
           },
           "eslint-service.logLevel": {
             "type": "string",
             "default": "none",
-            "scope": "window"
+            "scope": "window",
+            "enum": [
+              "none",
+              "normal",
+              "verbose"
+            ],
+            "description": "The level of logging.",
+            "enumDescriptions": [
+              "Disables logging.",
+              "Logs information-messages.",
+              "Logs all messages."
+            ]
           }
         }
       }

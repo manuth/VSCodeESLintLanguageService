@@ -75,7 +75,12 @@
                                     "pnpm",
                                     "yarn"
                                   ],
-                                  "description": "The package-manager to print suggested commands for."
+                                  "description": "The package-manager to print suggested commands for.",
+                                  "enumDescriptions": [
+                                    "Indicates the Node Package Manager.",
+                                    "Indicates the `pnpm` Package Manager.",
+                                    "Indicates the `yarn` Package Manager."
+                                  ]
                                 },
                                 "logLevel": {
                                   "type": "string",
@@ -85,7 +90,12 @@
                                     "normal",
                                     "verbose"
                                   ],
-                                  "description": "The level of logging."
+                                  "description": "The level of logging.",
+                                  "enumDescriptions": [
+                                    "Disables logging.",
+                                    "Logs information-messages.",
+                                    "Logs all messages."
+                                  ]
                                 }
                             }
                         }
