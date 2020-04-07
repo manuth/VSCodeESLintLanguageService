@@ -213,6 +213,11 @@
               "yarn"
             ],
             "description": "The package-manager to print suggested commands for."
+          },
+          "eslint-service.logLevel": {
+            "type": "string",
+            "default": "none",
+            "scope": "window"
           }
         }
       }

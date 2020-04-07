@@ -76,6 +76,16 @@
                                     "yarn"
                                   ],
                                   "description": "The package-manager to print suggested commands for."
+                                },
+                                "logLevel": {
+                                  "type": "string",
+                                  "default": "none",
+                                  "enum": [
+                                    "none",
+                                    "normal",
+                                    "verbose"
+                                  ],
+                                  "description": "The level of logging."
                                 }
                             }
                         }
