@@ -1,0 +1,84 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Debug",
+            "type": "npm",
+            "script": "build-debug",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "Build Release",
+            "type": "npm",
+            "script": "build-release",
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "Watch Debug",
+            "type": "npm",
+            "script": "watch-debug",
+            "group": "build",
+            "problemMatcher": "$tsc-watch",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "never"
+            }
+        },
+        {
+            "label": "Watch Release",
+            "type": "npm",
+            "script": "watch-release",
+            "group": "build",
+            "problemMatcher": "$tsc-watch",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "never"
+            }
+        },
+        {
+            "label": "Stop Debug",
+            "type": "npm",
+            "script": "stop-debug",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never"
+            }
+        },
+        {
+            "label": "Stop Release",
+            "type": "npm",
+            "script": "stop-release",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never"
+            }
+        },
+        {
+            "label": "Rebuild Debug",
+            "type": "npm",
+            "script": "rebuild-debug",
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "Rebuild Release",
+            "type": "npm",
+            "script": "rebuild-release",
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "Lint",
+            "type": "npm",
+            "script": "lint",
+            "problemMatcher": "$tslint5",
+            "presentation": {
+                "reveal": "never"
+            }
+        }
+    ]
+}

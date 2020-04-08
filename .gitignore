@@ -1,3 +1,6 @@
+# Build results
+[Ll]ib/
+
 # Logs
 logs
 *.log
@@ -64,6 +67,9 @@ typings/
 
 # Output of 'npm pack'
 *.tgz
+
+# Output of 'vsce package'
+*.vsix
 
 # Yarn Integrity file
 .yarn-integrity

@@ -1,0 +1,22 @@
+{
+    "extends": "@manuth/tsconfig/recommended",
+    "compilerOptions": {
+        "module": "commonjs",
+        "lib": [
+            "es7",
+            "dom"
+        ],
+        "plugins": [
+            {
+                "name": "typescript-tslint-plugin"
+            }
+        ],
+        "target": "es6"
+    },
+    "files": [
+        "./gulpfile.ts"
+    ],
+    "include": [
+        "./.gulp/**/*"
+    ]
+}

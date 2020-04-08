@@ -1,0 +1,117 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "TS Lint plugin contributions to package.json",
+    "type": "object",
+    "properties": {
+        "compilerOptions": {
+            "type": "object",
+            "properties": {
+                "plugins": {
+                    "type": "array",
+                    "items": {
+                        "if": {
+                            "properties": {
+                                "name": {
+                                    "enum": [
+                                        "typescript-eslint-plugin"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "name"
+                            ]
+                        },
+                        "then": {
+                            "properties": {
+                                "ignoreJavaScript": {
+                                    "type": "boolean",
+                                    "default": false,
+                                    "description": "Controls whether javascript-files should be ignored."
+                                },
+                                "ignoreTypeScript": {
+                                    "type": "boolean",
+                                    "default": false,
+                                    "description": "Controls whether typescript-files should be ignored."
+                                },
+                                "allowInlineConfig": {
+                                    "type": "boolean",
+                                    "default": true,
+                                    "description": "Controls whether inline eslint-comments are processed.",
+                                    "markdownDescription": "Controls whether inline `eslint`-comments are processed."
+                                },
+                                "reportUnusedDisableDirectives": {
+                                    "type": "boolean",
+                                    "default": true,
+                                    "description": "Controls whether useless eslint-disable-next-line comments are detected.",
+                                    "markdownDescription": "Controls whether useless `eslint-disable-next-line` comments are detected."
+                                },
+                                "useEslintrc": {
+                                    "type": "boolean",
+                                    "default": true,
+                                    "description": "Controls whether .eslintrc.*-files are processed.",
+                                    "markdownDescription": "Controls whether `.eslintrc.*`-files are processed."
+                                },
+                                "configFile": {
+                                    "type": "string",
+                                    "description": "The path to a custom eslintrc-configuration to load.",
+                                    "markdownDescription": "The path to a custom `eslintrc`-configuration to load."
+                                },
+                                "alwaysShowRuleFailuresAsWarnings": {
+                                    "type": "boolean",
+                                    "default": false,
+                                    "description": "Controls whether all rule-failures, regardless whether the rules are set to warn or error, should be reported as warnings.",
+                                    "markdownDescription": "Controls whether all rule-failures, regardless whether the rules are set to `warn` or `error`, should be reported as warnings."
+                                },
+                                "suppressWhileTypeErrorsPresent": {
+                                    "type": "boolean",
+                                    "default": false,
+                                    "description": "Controls whether eslint-reports should be suppressed when there are other errors present."
+                                },
+                                "suppressDeprecationWarnings": {
+                                    "type": "boolean",
+                                    "default": false,
+                                    "description": "Controls whether warnings about the use of deprecated rules should be suppressed."
+                                },
+                                "packageManager": {
+                                    "type": "string",
+                                    "default": "npm",
+                                    "enum": [
+                                        "npm",
+                                        "pnpm",
+                                        "yarn"
+                                    ],
+                                    "description": "The package-manager to load global modules.",
+                                    "enumDescriptions": [
+                                        "Indicates the Node Package Manager.",
+                                        "Indicates the pnpm Package Manager.",
+                                        "Indicates the yarn Package Manager."
+                                    ],
+                                    "markdownEnumDescriptions": [
+                                        "Indicates the Node Package Manager.",
+                                        "Indicates the `pnpm` Package Manager.",
+                                        "Indicates the `yarn` Package Manager."
+                                    ]
+                                },
+                                "logLevel": {
+                                    "type": "string",
+                                    "default": "none",
+                                    "enum": [
+                                        "none",
+                                        "normal",
+                                        "verbose"
+                                    ],
+                                    "description": "The level of logging.",
+                                    "enumDescriptions": [
+                                        "Disables logging.",
+                                        "Logs information-messages.",
+                                        "Logs all messages."
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
