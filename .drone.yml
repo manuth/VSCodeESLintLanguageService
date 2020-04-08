@@ -14,12 +14,12 @@ steps:
 - name: build debug
   image: node
   commands:
-  - npm run build-debug
+  - npm run build
   - npm run clean
 - name: build release
   image: node
   commands:
-  - npm run build-release
+  - npm run build
   - npm run clean
 - name: build extension
   image: node
