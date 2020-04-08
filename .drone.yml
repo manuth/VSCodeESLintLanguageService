@@ -11,10 +11,10 @@ steps:
   image: node
   commands:
   - npm run lint
-- name: build
+- name: build release
   image: node
   commands:
-  - npm run build
+  - npm run build-release
 - name: build extension
   image: node
   commands:
@@ -65,4 +65,3 @@ trigger:
   - push
   - pull_request
   - tag
-  
