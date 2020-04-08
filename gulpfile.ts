@@ -257,7 +257,7 @@ async function Release()
                             "end",
                             () =>
                             {
-                                if (settings.Watch && ((queue.getPendingLength() + queue.getPendingLength()) === 1))
+                                if (settings.Watch && ((queue.getQueueLength() + queue.getPendingLength()) === 1))
                                 {
                                     logger.info(watchFinishMessage(errorMessages.length));
                                 }
