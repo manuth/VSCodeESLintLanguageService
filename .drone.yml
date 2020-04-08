@@ -11,12 +11,7 @@ steps:
   image: node
   commands:
   - npm run lint
-- name: build debug
-  image: node
-  commands:
-  - npm run build
-  - npm run clean
-- name: build release
+- name: build
   image: node
   commands:
   - npm run build
