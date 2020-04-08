@@ -92,6 +92,7 @@
     "upath": "^1.2.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
+    "vsce": "^1.75.0",
     "watchify": "^3.11.1"
   },
   "activationEvents": [
