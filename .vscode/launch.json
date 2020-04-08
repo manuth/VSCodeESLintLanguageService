@@ -13,24 +13,10 @@
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
             "outFiles": [
-                "${workspaceFolder}/ESLintLanguageService/lib/**/*.js"
+                "${workspaceFolder}/lib/**/*.js"
             ],
             "preLaunchTask": "Watch Debug",
             "postDebugTask": "Stop Debug"
-        },
-        {
-            "type": "extensionHost",
-            "request": "launch",
-            "name": "Launch Extension Release",
-            "runtimeExecutable": "${execPath}",
-            "args": [
-                "--extensionDevelopmentPath=${workspaceFolder}"
-            ],
-            "outFiles": [
-                "${workspaceFolder}/ESLintLanguageService/lib/**/*.js"
-            ],
-            "preLaunchTask": "Watch Release",
-            "postDebugTask": "Stop Release"
         }
     ]
 }

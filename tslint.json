@@ -1,7 +1,3 @@
 {
-    "extends": "@manuth/tslint-presets/recommended",
-    "rules": {
-        "interface-name": false,
-        "no-default-export": false
-    }
+    "extends": "@manuth/tslint-presets/recommended"
 }
