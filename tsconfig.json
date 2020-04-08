@@ -3,6 +3,7 @@
     "compileOnSave": true,
     "compilerOptions": {
         "rootDir": "./src",
+        "outDir": "./lib",
         "module": "commonjs",
         "lib": [
             "es7"
