@@ -4,9 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build Debug",
+            "label": "Build",
             "type": "npm",
-            "script": "build-debug",
+            "script": "build",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -14,15 +14,9 @@
             "problemMatcher": "$tsc"
         },
         {
-            "label": "Build Release",
+            "label": "Watch",
             "type": "npm",
-            "script": "build-release",
-            "problemMatcher": "$tsc"
-        },
-        {
-            "label": "Watch Debug",
-            "type": "npm",
-            "script": "watch-debug",
+            "script": "watch",
             "group": "build",
             "problemMatcher": "$tsc-watch",
             "isBackground": true,
@@ -31,44 +25,9 @@
             }
         },
         {
-            "label": "Watch Release",
+            "label": "Rebuild",
             "type": "npm",
-            "script": "watch-release",
-            "group": "build",
-            "problemMatcher": "$tsc-watch",
-            "isBackground": true,
-            "presentation": {
-                "reveal": "never"
-            }
-        },
-        {
-            "label": "Stop Debug",
-            "type": "npm",
-            "script": "stop-debug",
-            "problemMatcher": [],
-            "presentation": {
-                "reveal": "never"
-            }
-        },
-        {
-            "label": "Stop Release",
-            "type": "npm",
-            "script": "stop-release",
-            "problemMatcher": [],
-            "presentation": {
-                "reveal": "never"
-            }
-        },
-        {
-            "label": "Rebuild Debug",
-            "type": "npm",
-            "script": "rebuild-debug",
-            "problemMatcher": "$tsc"
-        },
-        {
-            "label": "Rebuild Release",
-            "type": "npm",
-            "script": "rebuild-release",
+            "script": "rebuild",
             "problemMatcher": "$tsc"
         },
         {

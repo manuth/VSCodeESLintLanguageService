@@ -32,10 +32,6 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
-node_modules/!(typescript-eslint-plugin)
-jspm_packages/
-
 # TypeScript v1 declaration files
 typings/
 
@@ -68,14 +64,18 @@ typings/
 gulpfile.ts
 
 # Source-files
-ESLintLanguageService/[Ss]rc/
+[Ss]rc/
 
 # TypeScript config-files
 tsconfig.json
 tslint.json
 
-# Unit-Tests and debug-files
-ESLintLanguageService/[Ll]ib/!(index.js)
+# Source-maps
+[Ll]ib/**/*.js.map
+
+# Unit-Tests
+test/
+[Ll]ib/tests/
 
 # Visual Studio Code-Environment
 .vscode/
