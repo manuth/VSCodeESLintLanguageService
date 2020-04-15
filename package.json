@@ -1,7 +1,7 @@
 {
   "name": "eslint-language-service",
   "displayName": "ESLint Language Service",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A VSCode-Extension that provides ESLint support using typescript-eslint-plugin",
   "markdownDescription": "A VSCode-Extension that provides ESLint support using `typescript-eslint-plugin`",
   "author": "Manuel Thalmann <m@nuth.ch>",
@@ -42,7 +42,7 @@
     "prepare": "npm run rebuild"
   },
   "dependencies": {
-    "typescript-eslint-plugin": "^1.1.3"
+    "typescript-eslint-plugin": "^1.1.4"
   },
   "devDependencies": {
     "@manuth/tsconfig": "^1.2.2",
@@ -57,11 +57,11 @@
     "@types/merge-stream": "^1.1.2",
     "@types/minimist": "^1.2.0",
     "@types/mocha": "^7.0.2",
-    "@types/node": "^13.11.0",
+    "@types/node": "^13.11.1",
     "@types/promise-queue": "^2.2.0",
     "@types/vinyl-buffer": "^1.0.0",
     "@types/vinyl-source-stream": "0.0.30",
-    "@types/vscode": "^1.43.0",
+    "@types/vscode": "^1.44.0",
     "@types/watchify": "^3.11.0",
     "browserify": "^16.5.1",
     "fancy-log": "^1.3.3",
