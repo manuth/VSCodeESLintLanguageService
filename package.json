@@ -1,7 +1,7 @@
 {
   "name": "eslint-language-service",
   "displayName": "ESLint Language Service",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A VSCode-Extension that provides ESLint support using typescript-eslint-plugin",
   "markdownDescription": "A VSCode-Extension that provides ESLint support using `typescript-eslint-plugin`",
   "author": "Manuel Thalmann <m@nuth.ch>",
@@ -48,7 +48,7 @@
     "@manuth/tsconfig": "^1.2.2",
     "@manuth/tslint-presets": "^1.0.4",
     "@types/node": "^14.0.1",
-    "@types/vscode": "^1.45.0",
+    "@types/vscode": "^1.43.0",
     "rimraf": "^3.0.2",
     "tslint": "^6.1.2",
     "typescript": "^3.9.2",
