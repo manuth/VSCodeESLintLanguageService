@@ -59,10 +59,6 @@ typings/
 # next.js build output
 .next
 
-# gulp-files
-.gulp/
-gulpfile.ts
-
 # Source-files
 [Ss]rc/
 
