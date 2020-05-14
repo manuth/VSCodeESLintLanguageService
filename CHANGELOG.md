@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   - Update `typescript-eslint-plugin` to the latest version
   - Improve maintainability
 
-[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.1/v1.0.2)
+[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.1..v1.0.2)
 
 ## VSCodeESLintLanguageService v1.0.1
   - Fix malworking plugin
