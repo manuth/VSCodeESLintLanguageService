@@ -1,7 +1,7 @@
 {
   "name": "eslint-language-service",
   "displayName": "ESLint Language Service",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A VSCode-Extension that provides ESLint support using typescript-eslint-plugin",
   "markdownDescription": "A VSCode-Extension that provides ESLint support using `typescript-eslint-plugin`",
   "author": "Manuel Thalmann <m@nuth.ch>",
