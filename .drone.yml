@@ -16,7 +16,7 @@ steps:
     commands:
       - npm run lint
   - name: publish extension
-    image: node
+    image: node:12
     environment:
       ACCESS_TOKEN:
         from_secret: AZURE_TOKEN
@@ -28,7 +28,7 @@ steps:
       ref:
         - refs/tags/v[0-9].[0-9].[0-9]
   - name: prepare release
-    image: node:12
+    image: node
     commands:
       - npx vsce package
       - npm install escape-string-regexp
