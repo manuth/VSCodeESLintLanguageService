@@ -30,7 +30,6 @@
     "access": "public"
   },
   "scripts": {
-    "vscode:prepublish": "npm run rebuild",
     "build": "tsc -b tsconfig.build.json",
     "rebuild": "npm run clean && npm run build",
     "watch": "npm run build -- --watch",
@@ -39,7 +38,8 @@
     "lint": "npm run lint-base -- --ext .js,.jsx,.ts,.tsx ./src .eslintrc.js",
     "lint-ide": "npm run lint || exit 0",
     "test": "mocha",
-    "prepare": "npm run rebuild"
+    "prepare": "npm run rebuild",
+    "vscode:prepublish": "npm run rebuild"
   },
   "dependencies": {
     "@manuth/typescript-eslint-plugin": "^1.3.1"
