@@ -8,10 +8,13 @@ let extension = new Extension();
 
 /**
  * Activates the extension.
+ *
+ * @param context
+ * The extension-context.
  */
-export let activate = (context: ExtensionContext) => extension.Activate(context);
+export let activate = (context: ExtensionContext): Promise<void> => extension.Activate(context);
 
 /**
  * Deactivates the extension.
  */
-export let deactivate = () =>  extension.Dispose();
+export let deactivate = (): void => extension.Dispose();

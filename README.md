@@ -41,6 +41,8 @@ Configure this extension according to the [Configuration](#configuration)-sectio
     Controls whether eslint-reports should be suppressed while there are other errors present. (default: `false`)
   - `eslint-service.suppressDeprecationWarnings`:  
     Allows you to suppres reports about the usage of deprecated rules. (default: `false`)
+  * `eslint-service.suppressConfigNotFoundError`:  
+    By setting this option to `true` you can enable errors if no eslint-configuration could be found (default: `true`)
   - `eslint-service.packageManager`:  
     Specifies the package-manager which is used for loading global modules. (default: `npm`)
   - `eslint-service.logLevel`:  

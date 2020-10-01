@@ -12,5 +12,5 @@ export interface IApiV0
      * @param configuration
      * The configuration to apply.
      */
-    configurePlugin(pluginId: string, configuration: {}): void;
+    configurePlugin(pluginId: string, configuration: Record<string, unknown>): void;
 }
