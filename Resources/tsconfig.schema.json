@@ -13,7 +13,7 @@
                             "properties": {
                                 "name": {
                                     "enum": [
-                                        "typescript-eslint-plugin"
+                                        "@manuth/typescript-eslint-plugin"
                                     ]
                                 }
                             },

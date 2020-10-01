@@ -1,4 +1,4 @@
-import { ITSConfiguration } from "typescript-eslint-plugin/lib/Settings/ITSConfiguration";
+import { Constants, ITSConfiguration } from "@manuth/typescript-eslint-plugin";
 import { ExtensionContext, extensions, workspace } from "vscode";
 import { IApiV0 } from "./IApiV0";
 
@@ -15,7 +15,7 @@ export class Extension
     /**
      * The id of the plugin to add.
      */
-    private static pluginId = "typescript-eslint-plugin";
+    private static pluginId = Constants.Package.Name;
 
     /**
      * The name of the configuration-section.
