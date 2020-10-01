@@ -181,6 +181,13 @@
             "scope": "window",
             "description": "Controls whether warnings about the use of deprecated rules should be suppressed."
           },
+          "eslint-service.suppreccConfigNotFoundError": {
+            "type": "boolean",
+            "default": true,
+            "scope": "window",
+            "description": "Controls whether the absence of an eslint-configuration should be reported.",
+            "markdownDescription": "Controls whether the absence of an `eslint`-configuration should be reported."
+          },
           "eslint-service.packageManager": {
             "type": "string",
             "default": "npm",
