@@ -36,7 +36,7 @@ export class Extension
     /**
      * Gets context of the of the extension.
      */
-    public get Context()
+    public get Context(): ExtensionContext
     {
         return this.context;
     }
@@ -47,7 +47,7 @@ export class Extension
      * @param context
      * A collection of utilities private to an extension.
      */
-    public async Activate(context: ExtensionContext)
+    public async Activate(context: ExtensionContext): Promise<void>
     {
         this.context = context;
         let typeScriptExtension = extensions.getExtension(Extension.typeScriptExtensionId);
@@ -82,8 +82,11 @@ export class Extension
 
     /**
      * Updates the configuration of the plugin.
+     *
+     * @param api
+     * The API of the typescript-extension.
      */
-    protected UpdateConfig(api: IApiV0)
+    protected UpdateConfig(api: IApiV0): void
     {
         let workspaceConfig = workspace.getConfiguration();
         let config = workspaceConfig.get(Extension.configSection);
