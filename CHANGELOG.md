@@ -6,7 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## VSCodeESLintLanguageService [Unreleased]
 
-[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.3..dev)
+[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.4..dev)
+
+## VSCodeESLintLanguageService v1.0.4
+### Added
+  - Missing options to the configuration
+
+### Updated
+  - The development environment
+  - All dependencies
+
+[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.3..v1.0.4)
 
 ## VSCodeESLintLanguageService v1.0.3
   - Update `typescript-eslint-plugin` to the latest version
