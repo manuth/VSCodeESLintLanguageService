@@ -28,7 +28,7 @@ steps:
       ref:
         - refs/tags/v[0-9].[0-9].[0-9]
   - name: prepare release
-    image: node
+    image: node:12
     commands:
       - npx vsce package
       - npm install escape-string-regexp
