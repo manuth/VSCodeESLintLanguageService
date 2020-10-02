@@ -6,7 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## VSCodeESLintLanguageService [Unreleased]
 
-[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.4..dev)
+[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.5..dev)
+
+## VSCodeESLintLanguageService v1.0.5
+### Added
+  - Missing files to the extension
+
+[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.4..v1.0.5)
 
 ## VSCodeESLintLanguageService v1.0.4
 ### Added
