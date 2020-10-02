@@ -21,7 +21,7 @@ steps:
       ACCESS_TOKEN:
         from_secret: AZURE_TOKEN
     commands:
-      - npx vsce publish --pat $ACCESS_TOKEN
+      - npx vsce publish --no-yarn --pat $ACCESS_TOKEN
     when:
       event:
       - tag
@@ -30,7 +30,7 @@ steps:
   - name: prepare release
     image: node
     commands:
-      - npx vsce package
+      - npx vsce package --no-yarn
       - npm install escape-string-regexp
       - node -e "console.log(require('escape-string-regexp')('${DRONE_TAG}'))" > TagName.txt
     when:
