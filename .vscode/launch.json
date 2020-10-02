@@ -12,10 +12,12 @@
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
+            "preLaunchTask": "Build",
+            "sourceMaps": true,
             "outFiles": [
-                "${workspaceFolder}/lib/**/*.js"
-            ],
-            "preLaunchTask": "Build"
+                "${workspaceFolder}/**/*.js",
+                "!**/node_modules/**"
+            ]
         }
     ]
 }
