@@ -1,5 +1,5 @@
 # VSCodeESLintLanguageService
-A VSCode-Extension that provides ESLint support using `typescript-eslint-plugin`
+A VSCode-Extension that provides ESLint support using `@manuth/typescript-eslint-plugin`
 
 ## Requirements
 In order to use this extension you need to have `eslint` installed either in your workspace or globally.
@@ -13,7 +13,7 @@ Configure this extension according to the [Configuration](#configuration)-sectio
   "compilerOptions": {
     "plugins": [
       {
-        "name": "typescript-eslint-plugin",
+        "name": "@manuth/typescript-eslint-plugin",
         "ignoreJavaScript": true,
         "configFile": "custom.eslintrc.js"
       }
