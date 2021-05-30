@@ -1,6 +1,6 @@
 {
   "name": "eslint-language-service",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": true,
   "description": "A VSCode-Extension that provides ESLint support using `@manuth/typescript-eslint-plugin`",
   "author": "Manuel Thalmann <m@nuth.ch>",
@@ -38,7 +38,6 @@
     "lint-base": "eslint --max-warnings 0 --ignore-pattern \"!.eslintrc.js\"",
     "lint": "npm run lint-base -- --ext .js,.jsx,.ts,.tsx ./src .eslintrc.js",
     "lint-ide": "npm run lint || exit 0",
-    "test": "mocha",
     "prepare": "npm run rebuild"
   },
   "dependencies": {
