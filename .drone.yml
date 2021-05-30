@@ -16,7 +16,7 @@ steps:
     commands:
       - npm run lint
   - name: publish extension
-    image: node:12
+    image: node:lts
     environment:
       ACCESS_TOKEN:
         from_secret: AZURE_TOKEN
