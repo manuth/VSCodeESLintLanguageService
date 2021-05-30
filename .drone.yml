@@ -37,7 +37,7 @@ steps:
       event:
         - tag
   - name: prepare release notes
-    image: ubuntu
+    image: alpine
     commands:
       - export TagName=$$(cat TagName.txt)
       - export TagHeading="/## \(.* \($${TagName}\|[$${TagName}]\)\)\$/"
