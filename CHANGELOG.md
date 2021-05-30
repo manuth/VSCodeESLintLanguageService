@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## VSCodeESLintLanguageService [Unreleased]
+  - All dependencies
+
+[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.9..dev)
+
+## VSCodeESLintLanguageService v1.0.9
 ### Fixed
   - Broken drope-pipelines
   - Drone-pipelines to also work for multi-digit version-numbers
@@ -20,7 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Drone-pipelines to stop tampering with the `package.json`-file
   - All dependencies
 
-[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.8..dev)
+[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.8..v1.0.9)
 
 ## VSCodeESLintLanguageService v1.0.8
 ### Fixed
