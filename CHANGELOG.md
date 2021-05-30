@@ -5,7 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## VSCodeESLintLanguageService [Unreleased]
+### Updated
   - All dependencies
+
+### Fixed
+  - All vulnerabilities in dependencies
 
 [Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.9..dev)
 
