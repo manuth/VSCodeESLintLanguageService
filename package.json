@@ -58,7 +58,7 @@
     "rimraf": "^3.0.2",
     "tslint": "^6.1.3",
     "typescript": "^4.3.2",
-    "vsce": "^1.88.0"
+    "vsce": "^1.91.0"
   },
   "displayName": "ESLint Language Service",
   "markdownDescription": "A VSCode-Extension that provides ESLint support using `typescript-eslint-plugin`",
