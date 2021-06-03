@@ -46,7 +46,7 @@
   "devDependencies": {
     "@manuth/eslint-plugin-typescript": "^3.0.1",
     "@manuth/tsconfig": "^2.0.0",
-    "@types/node": "^15.6.1",
+    "@types/node": "^15.9.0",
     "@types/vscode": "^1.56.0",
     "@typescript-eslint/eslint-plugin": "^4.26.0",
     "@typescript-eslint/eslint-plugin-tslint": "^4.25.0",
