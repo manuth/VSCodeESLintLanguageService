@@ -19,7 +19,7 @@ steps:
     image: node
     environment:
       ACCESS_TOKEN:
-        from_secret: AZURE_TOKEN
+        from_secret: azure_token
     commands:
       - npx vsce publish --no-yarn --pat $ACCESS_TOKEN
     when:
