@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## VSCodeESLintLanguageService [Unreleased]
+
+[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.1.0...dev)
+
+## VSCodeESLintLanguageService v1.1.0
 ### Fixed
   - Vulnerabilities in dependencies
 
@@ -14,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Updated
   - All dependencies
 
-[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.10...dev)
+[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.10...v1.1.0)
 
 ## VSCodeESLintLanguageService v1.0.10
 ### Updated
@@ -27,7 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## VSCodeESLintLanguageService v1.0.9
 ### Fixed
-  - Broken drope-pipelines
+  - Broken drone-pipelines
   - Drone-pipelines to also work for multi-digit version-numbers
   - Broken dependabot-settings
   - Vulnerabilities in dependencies
@@ -96,7 +100,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.1...v1.0.2)
 
 ## VSCodeESLintLanguageService v1.0.1
-  - Fix malworking plugin
+  - Fix malfunctioning plugin
   - Remove browserify build method
 
 [Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.0...v1.0.1)
