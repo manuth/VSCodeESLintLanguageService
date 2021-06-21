@@ -110,11 +110,11 @@
       },
       {
         "fileMatch": "jsconfig*.json",
-        "url": "./Resources/tsconfig.schema.json"
+        "url": "./Resources/typescript-eslint-plugin.schema.json"
       },
       {
         "fileMatch": "tsconfig*.json",
-        "url": "./Resources/tsconfig.schema.json"
+        "url": "./Resources/typescript-eslint-plugin.schema.json"
       }
     ],
     "configuration": [
