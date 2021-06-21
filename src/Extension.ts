@@ -28,13 +28,13 @@ export class Extension
     private context: ExtensionContext = null;
 
     /**
-     * Initializes a new instance of the `Extension`-class.
+     * Initializes a new instance of the {@link Extension `Extension`}-class.
      */
     public constructor()
     { }
 
     /**
-     * Gets context of the of the extension.
+     * Gets the context of the of the extension.
      */
     public get Context(): ExtensionContext
     {
