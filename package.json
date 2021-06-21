@@ -30,7 +30,7 @@
     "access": "public"
   },
   "scripts": {
-    "vscode:prepublish": "npm run rebuild",
+    "vscode:prepublish": "npm run prepare",
     "build": "tsc -b tsconfig.build.json",
     "rebuild": "npm run clean && npm run build",
     "watch": "npm run build -- --watch",
