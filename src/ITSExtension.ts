@@ -6,15 +6,10 @@ import { IApiV0 } from "./IApiV0";
 export interface ITSExtension
 {
     /**
-     * The exported components of the extension.
+     * Gets an API from the plugin.
+     *
+     * @param version
+     * The version of the api to get.
      */
-    exports?: {
-        /**
-         * Gets an API from the plugin.
-         *
-         * @param version
-         * The version of the api to get.
-         */
-        getAPI?(version: number): IApiV0;
-    };
+    getAPI?(version: number): IApiV0;
 }
