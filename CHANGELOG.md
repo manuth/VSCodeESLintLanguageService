@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## VSCodeESLintLanguageService [Unreleased]
+### Fixed
+  - Vulnerabilities in dependencies
+
+### Added
+  - This extension to the [Open VSX Registry](https://open-vsx.org/)
+
+### Updated
+  - All dependencies
 
 [Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.0.10...dev)
 
