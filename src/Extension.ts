@@ -1,6 +1,7 @@
 import { Constants, ITSConfiguration } from "@manuth/typescript-eslint-plugin";
 import { ExtensionContext, extensions, workspace } from "vscode";
 import { IApiV0 } from "./IApiV0";
+import { ITSExtension } from "./ITSExtension";
 
 /**
  * Represents the extension.
@@ -28,13 +29,13 @@ export class Extension
     private context: ExtensionContext = null;
 
     /**
-     * Initializes a new instance of the `Extension`-class.
+     * Initializes a new instance of the {@link Extension `Extension`}-class.
      */
     public constructor()
     { }
 
     /**
-     * Gets context of the of the extension.
+     * Gets the context of the of the extension.
      */
     public get Context(): ExtensionContext
     {
@@ -50,7 +51,7 @@ export class Extension
     public async Activate(context: ExtensionContext): Promise<void>
     {
         this.context = context;
-        let typeScriptExtension = extensions.getExtension(Extension.typeScriptExtensionId);
+        let typeScriptExtension = extensions.getExtension<ITSExtension>(Extension.typeScriptExtensionId);
 
         if (typeScriptExtension)
         {

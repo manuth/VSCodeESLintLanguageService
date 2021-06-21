@@ -15,11 +15,23 @@ steps:
     image: node
     commands:
       - npm run lint
-  - name: publish extension
+  - name: publish extension to ovsx marketplace
     image: node
     environment:
       ACCESS_TOKEN:
-        from_secret: AZURE_TOKEN
+        from_secret: ovsx_token
+    commands:
+      - npx ovsx publish --pat $ACCESS_TOKEN
+    when:
+      event:
+        - tag
+      ref:
+        - refs/tags/v[0-9]*.[0-9]*.[0-9]*
+  - name: publish extension to vscode marketplace
+    image: node
+    environment:
+      ACCESS_TOKEN:
+        from_secret: azure_token
     commands:
       - npx vsce publish --no-yarn --pat $ACCESS_TOKEN
     when:
