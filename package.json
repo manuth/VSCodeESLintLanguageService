@@ -64,7 +64,7 @@
     "ts-patch": "^1.3.3",
     "tslint": "^6.1.3",
     "typescript": "^4.3.4",
-    "vsce": "^1.94.0"
+    "vsce": "^1.95.0"
   },
   "displayName": "ESLint Language Service",
   "markdownDescription": "A VSCode-Extension that provides ESLint support using `typescript-eslint-plugin`",
