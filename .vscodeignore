@@ -79,6 +79,7 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
+dist
 
 # Gatsby files
 .cache/
@@ -133,3 +134,8 @@ tsconfig.*.json
 
 # Drone configuration
 .drone.yml
+
+# Temporary release-assets
+.tagName.txt
+.releaseNotes.md
+.releaseTitle.md
