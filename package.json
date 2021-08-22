@@ -42,7 +42,7 @@
     "patchTypeScript": "ts-patch install && ts-patch --persist"
   },
   "dependencies": {
-    "@manuth/typescript-eslint-plugin": "^1.4.1"
+    "@manuth/typescript-eslint-plugin": "^1.4.2"
   },
   "devDependencies": {
     "@manuth/eslint-plugin-typescript": "^3.2.4",
