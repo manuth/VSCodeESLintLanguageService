@@ -72,7 +72,7 @@
                                     "default": false,
                                     "description": "Controls whether warnings about the use of deprecated rules should be suppressed."
                                 },
-                                "suppreccConfigNotFoundError": {
+                                "suppressConfigNotFoundError": {
                                   "type": "boolean",
                                   "default": true,
                                   "description": "Controls whether the absence of an eslint-configuration should be reported.",

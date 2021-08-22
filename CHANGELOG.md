@@ -6,7 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## VSCodeESLintLanguageService [Unreleased]
 
-[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.1.2...dev)
+[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.1.3...dev)
+
+## VSCodeESLintLanguageService v1.1.3
+### Fixed
+  - Vulnerabilities in dependencies
+
+### Added
+  - Support for `ts-nameof`
+  - Support for parallel step-execution in drone-pipelines
+
+### Updated
+  - All dependencies
+
+[Show differences](https://github.com/manuth/VSCodeESLintLanguageService/compare/v1.1.2...v1.1.3)
 
 ## VSCodeESLintLanguageService v1.1.2
 ### Added
