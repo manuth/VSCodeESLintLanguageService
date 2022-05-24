@@ -45,7 +45,7 @@
     "@manuth/typescript-eslint-plugin": "^1.4.2"
   },
   "devDependencies": {
-    "@manuth/eslint-plugin-typescript": "^3.2.4",
+    "@manuth/eslint-plugin-typescript": "^3.2.7",
     "@manuth/tsconfig": "^2.0.3",
     "@types/node": "^16.7.1",
     "@types/ts-nameof": "^4.2.1",
